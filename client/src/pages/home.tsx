@@ -233,8 +233,21 @@ export default function HomePage() {
   const onSubmit = async (values: ContactValues) => {
     try {
       await new Promise((r) => setTimeout(r, 700));
-      toast.success("Request sent", {
-        description: "We’ll get back to you within one business day.",
+
+      // Construct WhatsApp message
+      const messageText = `*New Quote Request - Core Matrix Metal*%0A%0A` +
+        `*Name:* ${values.name}%0A` +
+        `*Company:* ${values.company || "N/A"}%0A` +
+        `*Email:* ${values.email}%0A` +
+        `*Phone:* ${values.phone}%0A%0A` +
+        `*Requirement:*%0A${values.message}`;
+
+      // Open WhatsApp
+      const whatsappUrl = `https://wa.me/919113887257?text=${encodeURIComponent(messageText.replace(/%0A/g, '\n'))}`;
+      window.open(whatsappUrl, '_blank');
+
+      toast.success("Request ready", {
+        description: "Opening WhatsApp to send your details. Please note: attachments must be uploaded manually in the chat.",
       });
       form.reset();
     } catch {
