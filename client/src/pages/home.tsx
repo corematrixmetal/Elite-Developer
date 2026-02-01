@@ -207,12 +207,12 @@ export default function HomePage() {
 
   const gallery = useMemo(
     () => [
-      { src: "https://images.unsplash.com/photo-1610891015188-536921b76031?auto=format&fit=crop&w=1200&q=80", alt: "Copper scrap close-up" },
-      { src: "https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=1200&q=80", alt: "Industrial sorting" },
-      { src: "https://images.unsplash.com/photo-1611403119860-57c4937ef987?auto=format&fit=crop&w=1200&q=80", alt: "Warehouse logistics" },
-      { src: "https://images.unsplash.com/photo-1605902711622-cfb43c44367f?auto=format&fit=crop&w=1200&q=80", alt: "Metal bundles" },
-      { src: "https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&w=1200&q=80", alt: "Quality checks" },
-      { src: "https://images.unsplash.com/photo-1581092795360-fd1ca04f0952?auto=format&fit=crop&w=1200&q=80", alt: "B2B operations" },
+      { src: "/images/copper-1.png", alt: "Premium Millberry copper wire scrap" },
+      { src: "/images/copper-2.png", alt: "Industrial copper pipe scrap lots" },
+      { src: "/images/copper-3.png", alt: "Professional metal sorting facility" },
+      { src: "/images/copper-4.png", alt: "Heavy copper plate and cathode scrap" },
+      { src: "/images/copper-5.png", alt: "Baled copper scrap ready for dispatch" },
+      { src: "/images/copper-6.png", alt: "Quality verification and grading process" },
     ],
     [],
   );
@@ -736,7 +736,7 @@ export default function HomePage() {
                     </div>
                     <div>
                       <div className="text-sm text-muted-foreground">Phone</div>
-                      <div className="font-medium">+91 9XXXXXXXXX</div>
+                      <div className="font-medium">+91 9113887257</div>
                     </div>
                   </div>
                 </motion.div>
@@ -904,7 +904,7 @@ export default function HomePage() {
                   <MapPin className="size-4 text-primary" aria-hidden="true" /> Bengaluru, Karnataka
                 </div>
                 <div className="flex items-center gap-2" data-testid="row-footer-phone">
-                  <Phone className="size-4 text-primary" aria-hidden="true" /> +91 9XXXXXXXXX
+                  <Phone className="size-4 text-primary" aria-hidden="true" /> +91 9113887257
                 </div>
               </div>
             </div>
@@ -935,7 +935,7 @@ export default function HomePage() {
       </main>
 
       <a
-        href="https://wa.me/919999999999"
+        href="https://wa.me/919113887257"
         target="_blank"
         rel="noreferrer"
         className="fixed bottom-5 right-5 z-50 grid size-12 place-items-center rounded-full border border-border/60 bg-background/70 text-primary shadow-lg backdrop-blur transition hover:-translate-y-0.5"
