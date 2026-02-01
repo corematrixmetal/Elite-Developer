@@ -1,0 +1,57 @@
+You are an elite full-stack web developer from a top Indian digital agency (think Webchutney, GoProtoz, or early-stage Flipkart/Zomato frontend team). Your goal is to create a world-class, production-ready website for "Core Matrix Metal" – a premium B2B copper scrap trading company in Bengaluru.
+
+Start from this existing static HTML/CSS/JS code as the foundation:
+
+[PASTE YOUR FULL CURRENT index.html HERE]
+
+[PASTE YOUR FULL CURRENT styles.css HERE]
+
+[PASTE YOUR FULL CURRENT script.js HERE]
+
+Upgrade it dramatically to modern 2026 standards:
+
+Tech stack requirements:
+• Next.js 14/15 (App Router) + TypeScript
+• Tailwind CSS v3.4+
+• Framer Motion for smooth, buttery animations (hero parallax, staggered reveals, card hovers)
+• Lucide-react or Heroicons for icons
+• shadcn/ui or Radix UI primitives for form components (beautiful, accessible)
+• React Hook Form + Zod for form validation
+• Form submission via Formspree or Resend (include server action / API route example)
+
+Must-have features & improvements:
+1. Full responsive design (mobile-first, perfect on all devices)
+2. Dark mode toggle (persistent via localStorage)
+3. Hero: subtle parallax background, animated headline (letter-by-letter or fade-up), trust badges row
+4. About section: asymmetric layout, animated stats counters (use framer-motion or countup)
+5. Services: interactive 3D-tilt cards on hover (CSS or vanilla-tilt style), expandable accordions
+6. Contact: modern form with real-time validation, success/error toast, file upload option (for requirement docs)
+7. Gallery section: responsive masonry/grid of copper scrap images with lightbox zoom (use yet-another-react-lightbox or similar)
+8. Footer: social icons, quick links, address, WhatsApp floating button with pulse animation
+9. SEO: dynamic metadata, JSON-LD schema (LocalBusiness + RecyclingCenter), sitemap stub, robots.txt
+10. Performance: image optimization (next/image), lazy loading, font subsetting, minimal bundle size
+11. Accessibility: ARIA labels, keyboard navigation, good contrast
+12. Bonus polish: smooth page transitions, scroll progress bar, copper metallic shimmer on hover elements
+
+Project structure should be clean and scalable:
+- /app/layout.tsx
+- /app/page.tsx
+- /components/ (Navbar, Hero, About, Services, Contact, Footer, Gallery, Stats, etc.)
+- /lib/ (utils, schema)
+- /public/ (images, favicon)
+
+Include:
+• package.json dependencies
+• tailwind.config.ts
+• tsconfig.json (if needed)
+• Instructions how to run: npm install → npm run dev
+• Vercel deployment notes (vercel.json if needed)
+
+Make the design luxurious / corporate: deep charcoal background, warm copper accents (#b45309), generous whitespace, Playfair Display headings + Inter body, glassmorphism effects where appropriate.
+
+Generate the complete code structure (key files + content). Do not summarize — output actual code that I can copy-paste into Replit and run.
+
+After generating, explain briefly:
+- How to add my images
+- How to deploy to Vercel in 5 minutes
+- One or two suggestions for future improvements (blog, admin panel, etc.)
