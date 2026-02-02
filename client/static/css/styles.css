@@ -1,0 +1,42 @@
+/* Custom transitions and glass effects */
+:root {
+    --primary: #b45309;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.reveal {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.8s ease-out;
+}
+
+.reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.delay-200 { transition-delay: 200ms; }
+.delay-400 { transition-delay: 400ms; }
+
+/* Scroll progress bar */
+#scroll-progress {
+    transition: transform 0.1s ease-out;
+}
+
+/* Lightbox zoom effect */
+.gallery-item {
+    cursor: zoom-in;
+    transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.gallery-item:hover {
+    transform: scale(1.02);
+}
+
+/* Form input custom styling */
+input:focus, textarea:focus {
+    box-shadow: 0 0 0 4px rgba(180, 83, 9, 0.1);
+}

@@ -1,36 +1,220 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
-
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Core Matrix Metal | Premium B2B Copper Scrap Trading</title>
+    
     <meta property="og:title" content="Core Matrix Metal" />
-    <meta
-      property="og:description"
-      content="Premium B2B copper scrap trading in Bengaluru — verified lots, transparent grading, fast pickup, and compliant documentation."
-    />
-    <meta property="og:type" content="website" />
+    <meta property="og:description" content="Premium B2B copper scrap trading in Bengaluru — verified lots, transparent grading, fast pickup." />
     <meta property="og:image" content="https://replit.com/public/images/opengraph.png" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@replit" />
-    <meta name="twitter:title" content="Core Matrix Metal" />
-    <meta
-      name="twitter:description"
-      content="Premium B2B copper scrap trading in Bengaluru — verified lots, transparent grading, fast pickup, and compliant documentation."
-    />
-    <meta name="twitter:image" content="https://replit.com/public/images/opengraph.png" />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="static/css/styles.css">
+    
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://unpkg.com/framer-motion@latest/dist/framer-motion.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#b45309',
+                        copper: '#b45309',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Playfair Display', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-[#fcfbf9] text-[#111827] dark:bg-[#0a0c10] dark:text-[#f3f4f6] font-sans transition-colors duration-300">
+    <div id="scroll-progress" class="fixed top-0 left-0 h-1 z-[60] bg-gradient-to-r from-primary to-orange-400 origin-left scale-x-0"></div>
 
-    <link rel="icon" type="image/png" href="/favicon.png" />
+    <header class="sticky top-0 z-50 border-b border-gray-200/60 dark:border-gray-800/60 bg-white/70 dark:bg-[#0a0c10]/70 backdrop-blur-xl">
+        <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 grid place-items-center rounded-2xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900">
+                    <i data-lucide="sparkles" class="w-5 h-5 text-primary"></i>
+                </div>
+                <div>
+                    <div class="font-display text-lg font-semibold">Core Matrix Metal</div>
+                    <div class="text-xs text-gray-500">Premium Copper Trading • Bengaluru</div>
+                </div>
+            </div>
+            
+            <nav class="hidden md:flex items-center gap-6 text-sm font-medium text-gray-500 dark:text-gray-400">
+                <a href="#about" class="hover:text-primary transition">About</a>
+                <a href="#services" class="hover:text-primary transition">Services</a>
+                <a href="#gallery" class="hover:text-primary transition">Gallery</a>
+                <a href="#contact" class="hover:text-primary transition">Contact</a>
+            </nav>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+            <div class="flex items-center gap-2">
+                <button id="theme-toggle" class="p-2 rounded-xl hover:bg-gray-100 dark:hover:bg-gray-800 transition">
+                    <i data-lucide="sun" id="sun-icon" class="w-4 h-4 hidden"></i>
+                    <i data-lucide="moon" id="moon-icon" class="w-4 h-4"></i>
+                </button>
+                <a href="#contact" class="hidden md:block bg-primary text-white px-5 py-2.5 rounded-xl text-sm font-medium hover:opacity-90 transition">Request Quote</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="relative overflow-hidden py-20 px-4">
+            <div class="absolute inset-0 -z-10 opacity-30 dark:opacity-20 blur-3xl pointer-events-none">
+                <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-primary/20 rounded-full"></div>
+            </div>
+            
+            <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+                <div class="reveal">
+                    <div class="flex flex-wrap gap-2 mb-6">
+                        <span class="px-3 py-1 rounded-full bg-gray-100 dark:bg-gray-800 text-xs flex items-center gap-2">
+                            <i data-lucide="badge-check" class="w-3.5 h-3.5 text-primary"></i> Verified lots
+                        </span>
+                        <span class="px-3 py-1 rounded-full bg-gray-100 dark:bg-gray-800 text-xs flex items-center gap-2">
+                            <i data-lucide="shield-check" class="w-3.5 h-3.5 text-primary"></i> Compliant
+                        </span>
+                    </div>
+                    <h1 class="font-display text-5xl md:text-6xl mb-6">
+                        Premium copper scrap trading, built for <span class="text-primary underline decoration-primary/30">precision</span>.
+                    </h1>
+                    <p class="text-gray-500 dark:text-gray-400 text-lg mb-8 max-w-lg">
+                        Reliable supply, consistent grading, and transparent pricing for Bengaluru's leading manufacturers.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="#contact" class="bg-primary text-white px-8 py-3 rounded-2xl font-medium text-center hover:opacity-90 transition shadow-lg shadow-primary/20">Get a Quote</a>
+                        <a href="tel:+919113887257" class="border border-gray-200 dark:border-gray-800 px-8 py-3 rounded-2xl font-medium text-center hover:bg-gray-50 dark:hover:bg-gray-900 transition flex items-center justify-center gap-2">
+                            <i data-lucide="phone" class="w-4 h-4"></i> Talk to Sales
+                        </a>
+                    </div>
+                </div>
+                <div class="relative reveal delay-200">
+                    <div class="bg-white dark:bg-gray-900 p-8 rounded-[2rem] border border-gray-200 dark:border-gray-800 shadow-2xl">
+                        <div class="space-y-6">
+                            <div class="flex items-center gap-4 p-4 rounded-2xl bg-gray-50 dark:bg-gray-800/50">
+                                <div class="w-10 h-10 rounded-xl bg-primary/10 grid place-items-center text-primary">
+                                    <i data-lucide="factory" class="w-5 h-5"></i>
+                                </div>
+                                <div>
+                                    <div class="text-xs text-gray-500">Grades</div>
+                                    <div class="font-semibold text-sm">Millberry / Birla / Berry</div>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-4 p-4 rounded-2xl bg-gray-50 dark:bg-gray-800/50">
+                                <div class="w-10 h-10 rounded-xl bg-primary/10 grid place-items-center text-primary">
+                                    <i data-lucide="truck" class="w-5 h-5"></i>
+                                </div>
+                                <div>
+                                    <div class="text-xs text-gray-500">Logistics</div>
+                                    <div class="font-semibold text-sm">48-72h Pickup SLA</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Section -->
+        <section id="about" class="py-20 px-4 bg-gray-50 dark:bg-gray-900/50">
+            <div class="max-w-6xl mx-auto">
+                <div class="grid md:grid-cols-4 gap-8">
+                    <div class="p-6 bg-white dark:bg-gray-900 rounded-3xl border border-gray-100 dark:border-gray-800 text-center">
+                        <div class="text-3xl font-display font-bold text-primary mb-1">120+</div>
+                        <div class="text-xs text-gray-500 uppercase tracking-wider">Suppliers</div>
+                    </div>
+                    <div class="p-6 bg-white dark:bg-gray-900 rounded-3xl border border-gray-100 dark:border-gray-800 text-center">
+                        <div class="text-3xl font-display font-bold text-primary mb-1">18k</div>
+                        <div class="text-xs text-gray-500 uppercase tracking-wider">Tons/Year</div>
+                    </div>
+                    <div class="p-6 bg-white dark:bg-gray-900 rounded-3xl border border-gray-100 dark:border-gray-800 text-center">
+                        <div class="text-3xl font-display font-bold text-primary mb-1">96%</div>
+                        <div class="text-xs text-gray-500 uppercase tracking-wider">On-Time</div>
+                    </div>
+                    <div class="p-6 bg-white dark:bg-gray-900 rounded-3xl border border-gray-100 dark:border-gray-800 text-center">
+                        <div class="text-3xl font-display font-bold text-primary mb-1">&lt;24h</div>
+                        <div class="text-xs text-gray-500 uppercase tracking-wider">Quote Time</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section id="gallery" class="py-20 px-4">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="font-display text-4xl mb-4">Operations Gallery</h2>
+                <p class="text-gray-500 mb-12">Quality checks, logistics, and material sorting.</p>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6" id="gallery-grid">
+                    <!-- Images inserted by JS -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-20 px-4 bg-gray-50 dark:bg-gray-900/50">
+            <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12">
+                <div>
+                    <h2 class="font-display text-4xl mb-6">Request a Quote</h2>
+                    <p class="text-gray-500 mb-8">Ready to secure your next lot? Fill out the form and we'll reach out on WhatsApp.</p>
+                    <div class="space-y-4">
+                        <div class="flex items-center gap-4 p-4 rounded-2xl bg-white dark:bg-gray-900 border border-gray-100 dark:border-gray-800">
+                            <i data-lucide="phone" class="text-primary"></i>
+                            <div>
+                                <div class="text-xs text-gray-500">Call/WhatsApp</div>
+                                <div class="font-medium">+91 9113887257</div>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4 p-4 rounded-2xl bg-white dark:bg-gray-900 border border-gray-100 dark:border-gray-800">
+                            <i data-lucide="map-pin" class="text-primary"></i>
+                            <div>
+                                <div class="text-xs text-gray-500">Location</div>
+                                <div class="font-medium">Bengaluru, Karnataka</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white dark:bg-gray-900 p-8 rounded-[2rem] border border-gray-100 dark:border-gray-800 shadow-xl">
+                    <form id="contact-form" class="space-y-4">
+                        <div>
+                            <label class="block text-sm font-medium mb-1.5">Full Name</label>
+                            <input type="text" name="name" required class="w-full px-4 py-3 rounded-xl border border-gray-200 dark:border-gray-800 dark:bg-gray-950 outline-none focus:border-primary transition">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium mb-1.5">Phone Number</label>
+                            <input type="tel" name="phone" required class="w-full px-4 py-3 rounded-xl border border-gray-200 dark:border-gray-800 dark:bg-gray-950 outline-none focus:border-primary transition">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium mb-1.5">Requirement Details</label>
+                            <textarea name="message" required rows="4" placeholder="Grade, Quantity, Location..." class="w-full px-4 py-3 rounded-xl border border-gray-200 dark:border-gray-800 dark:bg-gray-950 outline-none focus:border-primary transition"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-primary text-white py-4 rounded-xl font-semibold hover:opacity-90 transition">Send via WhatsApp</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="py-12 px-4 border-t border-gray-200 dark:border-gray-800 text-center">
+        <div class="max-w-6xl mx-auto">
+            <div class="font-display text-xl font-bold mb-4">Core Matrix Metal</div>
+            <p class="text-gray-500 text-sm mb-8">© 2026 Core Matrix Metal. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating -->
+    <a href="https://wa.me/919113887257" target="_blank" class="fixed bottom-6 right-6 w-14 h-14 bg-green-500 text-white rounded-full grid place-items-center shadow-2xl hover:scale-110 transition z-50">
+        <i data-lucide="message-circle" class="w-7 h-7"></i>
+    </a>
+
+    <script src="static/js/script.js"></script>
+</body>
 </html>
